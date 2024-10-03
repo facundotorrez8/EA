@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/Styles/IndexEA.css">
+    <link rel="icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/EA_Sports_monochrome_logo.svg/768px-EA_Sports_monochrome_logo.svg.png"
+        type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <nav id="menu-black" class="nav-black">
+            <a href="#">
+                <svg style="margin-right: 45px;" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="gray"
+                    class="bi bi-person-fill" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                </svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="gray" class="bi bi-question-lg"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215 0 1.344-.665 2.288-1.79 2.973-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712 1.03-.632 1.397-1.135 1.397-2.028 0-.979-.758-1.698-1.926-1.698-1.009 0-1.71.529-1.938 1.402-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09 0-.618-.473-1.092-1.095-1.092-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14" />
+                </svg>
+            </a>
+            <img src="https://logos-world.net/wp-content/uploads/2020/08/Electronic-Arts-Logo-2006-present.png">
+        </nav>
+        <nav id="menu-desplegable" class="nav-menu">
+            <button id="btn-modal" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" fill="black"
+                    class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                    <path
+                        d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                </svg>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Todos los juegos</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="body-1">
+                                <img class="img-modal-1"
+                                    src="https://media.contentapi.ea.com/content/dam/gin/images/2021/04/ea-play-16x9.png.adapt.crop1x1.767w.png">
+                                <h5 class="h5-play">Play</h5>
+                            </div>
+                            <div class="body-2">
+                                <img
+                                    src="https://media.contentapi.ea.com/content/dam/gin/images/2022/07/eas-fifa22-gen5-ue-keyart-horz-f23logo.jpg.adapt.crop1x1.767w.jpg">
+                                <h5 class="h5-fifa">FIFA 23</h5>
+                                <img
+                                    src="https://media.contentapi.ea.com/content/dam/gin/images/2022/05/1-1-gamebox-f122-keyart-1.png.adapt.crop1x1.767w.png">
+                                <h5 class="h5-f1">F1 22</h5>
+                            </div>
+                            <div class="body-3">
+                                <img
+                                    src="https://media.contentapi.ea.com/content/dam/gin/images/2022/05/madden-23-keyart.jpg.adapt.crop1x1.767w.jpg">
+                                <h5 class="h4-madden">MADDEN 23</h5>
+                                <img
+                                    src="https://media.contentapi.ea.com/content/dam/gin/images/2019/01/apex-legends-keyart.jpg.adapt.crop1x1.767w.jpg">
+                                <h5>APEX</h5>
+                            </div>
+                            <div class="body-4">
+                                <img
+                                    src="https://media.contentapi.ea.com/content/dam/gin/images/2021/06/battlefield-2042-key-art.jpg.adapt.crop1x1.767w.jpg">
+                                <h5 class="h5-battlefield">BATTLEFIELD</h5>
+                                <img
+                                    src="https://media.contentapi.ea.com/content/dam/gin/images/2017/01/the-sims-4-keyart.jpg.adapt.crop1x1.767w.jpg">
+                                <h5 class="h5-sims">SIMS4</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class="img-electronic"
+                src="https://media.contentapi.ea.com/content/dam/eacom/common/ea-wordmark-network-nav-coral.svg">
+            <select id="s-juegos" style="width: 120px;" class="form-select" aria-label="Large select example">
+                <option selected>JUEGOS</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+
+            </select>
+            <select id="s-experiencias" style="width: 185px;" class="form-select" aria-label="Large select example">
+                <option selected>EXPERIENCIAS</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <select id="s-acerca" style="width: 153px;" class="form-select" aria-label="Large select example">
+                <option selected>ACERCA DE</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <select id="s-compromisos" style="width: 188px;" class="form-select" aria-label="Large select example">
+                <div class="dos">
+                    <option selected>COMPROMISOS</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </div>
+            </select>
+            <select id="s-recursos" style="width: 148px;" class="form-select" aria-label="Large select example">
+                <option selected>RECURSOS</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </nav>
+    </header>
+    <main>
+        <div class="contenedor-portada">
+            <img class="img-portada"
+                src="https://media.contentapi.ea.com/content/dam/ea/fc/eacom-homepage-takeover/images/2024/07/fc25-hero-md-eacom-launch-7x2-xl.jpg.adapt.crop5x2.1455w.jpg">
+            <img class="img-portada-logo"
+                src="https://media.contentapi.ea.com/content/dam/ea/fc/eacom-homepage-takeover/images/2024/07/fc25-logo-teaser-l-m.png">
+            <h1>YA ESTÁ AQUÍ<br> EA SPORTS FC™ 25</h1>
+            <button class="btn-portada">Jugar ahora</button>
+        </div>
+        <div class="contenedor-mas-info">
+            <h2>CONDUCE EL FUTURO EN LA 3.ª TEMPORADA DE<br> F1® 24</h2>
+            <button type="button">MAS INFORMACION</button>
+        </div>
+        <div class="contenedor-destacados">
+            <h2>Juegos destacados</h2>
+            <div id="fila1" class="container text-center">
+                <div class="row">
+                    <div id="col1" class="col">
+                        <img id="img-dragon" class="img-juegos"
+                            src="https://media.contentapi.ea.com/content/dam/gin/images/2024/03/dragon-age-key-art-16x9.jpg.adapt.crop1x1.767p.jpg">
+                    </div>
+                    <div id="col2" class="col">
+                        <img id="img-f1" class="img-juegos"
+                            src="https://media.contentapi.ea.com/content/dam/gin/images/2024/02/f124-gametile-1x1.jpg.adapt.crop1x1.767p.jpg">
+                    </div>
+                    <div id="col3" class="col">
+                        <img id="img-zau" class="img-juegos"
+                            src="https://media.contentapi.ea.com/content/dam/gin/images/2023/12/talesofkenzera-eacom-gamebox-1x1.jpg.adapt.crop1x1.767p.jpg">
+                    </div>
+                </div>
+            </div>
+            <div id="fila2" class="container text-center">
+                <div class="row">
+                    <div id="col4" class="col">
+                        <img id="img-fifa" class="img-juegos"
+                            src="https://media.contentapi.ea.com/content/dam/gin/images/2023/07/fc24.jpeg.adapt.crop1x1.767p.jpeg">
+                    </div>
+                    <div class="col" id="col5">
+                        <img id="img-sims" class="img-juegos"
+                            src="https://media.contentapi.ea.com/content/dam/gin/images/2017/01/the-sims-4-keyart.jpg.adapt.crop1x1.767p.jpg">
+                    </div>
+                    <div id="col6" class="col">
+                        <img id="img-apex" class="img-juegos"
+                            src="https://media.contentapi.ea.com/content/dam/gin/images/2019/01/apex-legends-keyart.jpg.adapt.crop1x1.767p.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="logos-img">
+            <img id="logo-zau" class="logo-zau"
+                src="https://cdn2.steamgriddb.com/logo/a1962d2cf39c20b0308f64f64722a5b6.png">
+            <img class="logo-dragon" id="logo-dragon"
+                src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Dragon_Age_Pocz%C4%85tek_logo.png">
+            <img class="logo-apex" id="logo-apex"
+                src="https://seeklogo.com/images/A/apex-logo-F74B0C9FCD-seeklogo.com.png">
+            <img class="logo-fifa" id="logo-fifa"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/EA_Sports_FC_24_logo.svg/800px-EA_Sports_FC_24_logo.svg.png">
+            <img class="logo-sims4" id="logo-sims"
+                src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Logo_de_Los_Sims_4.png">
+            <img class="logo-f1" id="logo-f1" src="https://upload.wikimedia.org/wikipedia/commons/9/92/F1_24_logo.png">
+        </div>
+
+        <div class="contenedor-btn"><button class="btn-ultimos-juegos">Ultimos juegos</button> </div>
+        <div class="contenedor-actualizaciones">
+            <h2>Ultimas actualizaciones</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <a href="#">
+                        <div class="card h-100">
+                            <img src="https://media.contentapi.ea.com/content/dam/eacom/common/lovestruckep5.jpg.adapt.crop16x9.431p.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <section>
+                                    <p class="p-electronic">Electronic Arts Inc. </p>
+                                    <p class="p-fecha">12-sept-2024</p>
+                                </section>
+                                <h5 class="card-title">Los Sims y como EA crea<br>mundos autenticos</h5>
+                                <p class="card-text">Los Sims ofrece una gran variedad de<br>
+                                    mundos creados con esmero, que<br>representan con autewnticidad
+                                    las<br>experienciasdel mundo real de la<br> comunidad jugadora.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <div class="card h-100">
+                            <img src="https://media.contentapi.ea.com/content/dam/news/www-ea/common/2024-impact-report-thumbnail.png.adapt.crop16x9.431p.png"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <section>
+                                    <p class="p-electronic">Electronic Arts Inc. </p>
+                                    <p class="p-fecha">5-sept-2024</p>
+                                </section>
+                                <h5 class="card-title">Creando un impacto<br>mundial:compartiendo<br>nuestro informe de
+                                    impacto</h5>
+                                <p class="card-text">Informe de impacto de EA de 2024:<br>
+                                    liderando el futuro del entretenimiento y ayudando a fomentar un impacto<br>
+                                    duradero.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <div class="card h-100">
+                            <img src="https://media.contentapi.ea.com/content/dam/news/www-ea/common/intern-spotlight-thumbnail.png.adapt.crop16x9.431p.png"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <section>
+                                    <p class="p-electronic">Electronic Arts Inc. </p>
+                                    <p class="p-fecha">23-ago-2024</p>
+                                </section>
+                                <h5 class="card-title">Reflexiones sobre un<br>"verano en practicas en EA<br>SPORTS" con
+                                    Angelina y<br> Ahad</h5>
+                                <p class="card-text">¡Angelina y Ahad nos cuentan lo que<br>han aprendido y lo que mas
+                                    le ha<br>gustadode sus practicas de verano en<br>EA SPORTS!</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <a href="#">
+                        <div class="card h-100">
+                            <img src="https://media.contentapi.ea.com/content/dam/news/www-ea/common/kin-lau-screenshot-02-actiondiscarded-3840x2160.png.adapt.crop16x9.431p.png"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <section>
+                                    <p class="p-electronic">Electronic Arts Inc. </p>
+                                    <p class="p-fecha">22-sept-2024</p>
+                                </section>
+                                <h5 class="card-title">EA anticheat esta igualando<br>el terreno de juego</h5>
+                                <p class="card-text">EA anticheat garantiza que los juegos<br>sean justos, divertidos y
+                                    seguros para<br>millones de personas en todo el<br>mundo.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <div class="card h-100">
+                            <img src="https://media.contentapi.ea.com/content/dam/news/www-ea/common/eap-juneupdate-grid-xbox-storepage-4k.png.adapt.crop16x9.431p.png"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <section>
+                                    <p class="p-electronic">Electronic Arts Inc. </p>
+                                    <p class="p-fecha">1-sept-2024</p>
+                                </section>
+                                <h5 class="card-title">EA play: celebrando una<br>decada del juego</h5>
+                                <p class="card-text">EA Play celebra su 10mo aniversario<br>desde su lanzamiento en
+                                    2014.Desde<br>entonces,millones de personas de<br>todo el mundo han disfrutado de
+                                    su<br>servicio.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <div class="card h-100">
+                            <img src="https://media.contentapi.ea.com/content/dam/news/www-ea/common/1x0a4973.jpg.adapt.crop16x9.431p.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <section>
+                                    <p class="p-electronic">Electronic Arts Inc. </p>
+                                    <p class="p-fecha">25-jul-2024</p>
+                                </section>
+                                <h5 class="card-title">FC FUTURES: Abriendo las puertas del deporte rey al<br>mundo</h5>
+                                <p class="card-text">EA FC FUTURES han abierto las puertas<br>del futbol
+                                    a mas de 170.000 personas<br>en todo el mundo, ha restaurado<br>campos, ha entregado
+                                    suministros y<br>mucho mas.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor-btn"><button class="btn-ultimos-juegos">Leer mas</button> </div>
+
+        <div class="contenedor-EA-play">
+            <img class="ea-play-central"
+                src="https://media.contentapi.ea.com/content/dam/eacom/images/2023/09/ea-play-hero-gradient.png.adapt.crop5x2.1455w.png">
+            <section>
+                <img class="ea-play-logo"
+                    src="https://media.contentapi.ea.com/content/dam/eacom/subscription/ea-play/common/hero-logos/color/ea-play-logo-coral-hero-logo-small.svg">
+                <p>No te limites a jugar. Saca más partido a tus juegos. Desbloquea<br>recompensas exclusivas, contenido
+                    para
+                    los miembros y una<br>biblioteca de los mejores títulos.</p>
+                <div class="contenedor-btn2"><button class="btn-ultimos-juegos">Unete ya</button> </div>
+            </section>
+        </div>
+        <img class="img-ok"
+            src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/01/ea-play-2590007.jpg">
+
+        <div class="contenedor-celeste">
+            <h4>Herramientas parentales y de juego: el control en<br> tus manos</h4>
+            <button class="btn-ultimos-juegos">Mas informacion</button>
+        </div>
+
+        <div class="contenedor-impact-report">
+            <img class="img-impact-report"
+                src="https://media.contentapi.ea.com/content/dam/eacom/commitments/common/commitments-impact-report-2024-50-50-section-16x9.jpg.adapt.1456w.jpg">
+            <section>
+                <p>Cómo nuestros equipos llenos de talento y centrados en<br>los valores que defendemos trabajan
+                    constantemente para<br>ayudar a fomentar un impacto duradero que lidere el futuro<br>del
+                    entretenimiento.
+                </p>
+                <button>Mas informacion</button>
+                <button style="left: 73%;">Leer informe</button>
+            </section>
+        </div>
+        <div class="contenedor-enlaces">
+            <p style="font-size: 14px;">*SUJETO A CONDICIONES, LIMITACIONES Y EXCLUSIONES. CONSULTA LOS <strong
+                    style="color: red;">TÉRMINOS DE
+                    EA PLAY</strong> PARA OBTENER MÁS INFORMACIÓN.</p>
+            <hr>
+            <section>
+                <a href="#">Empleo</a>
+                <a href="#">Ejecutivos</a>
+                <a href="#">Informe de impacto</a>
+                <a href="#">Nuestros compromisos</a>
+                <a href="#">Comunicar inquietudes</a>
+                <p>Unete a la conversacion<br></p>
+            </section>
+            <section class="iconos">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                    class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                    class="bi bi-twitter-x" viewBox="0 0 16 16">
+                    <path
+                        d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-youtube"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                    class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-twitch"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142z" />
+                    <path d="M11.857 3.143h-1.143V6.57h1.143zm-3.143 0H7.571V6.57h1.143z" />
+                </svg>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <section class="footer1">
+            <img src="https://media.contentapi.ea.com/content/dam/eacom/common/medallion-violet.png">
+            <a href="#">Biblioteca de juegos</a>
+            <a href="#">Suscribirse</a>
+            <a href="#">Canjear Código</a>
+            <a href="#">EA app</a>
+            <a href="#">Acerca de</a>
+            <section class="label-select">
+                <div class="btn-group">
+                    <label>Idioma</label>
+                    <button id="btn-idioma" type="button" class="btn btn-danger">España</button>
+                    <button id="btn-flecha" type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <div class="row">
+                            <div class="col">
+                                <li><a class="dropdown-item" href="#">United States</a></li>
+                                <li><a class="dropdown-item" href="#">United Kingdom</a></li>
+                                <li><a class="dropdown-item" href="#">Australia</a></li>
+                                <li><a class="dropdown-item" href="#">France</a></li>
+                                <li><a class="dropdown-item" href="#">Deutshland</a></li>
+                                <li><a class="dropdown-item" href="#">Italia</a></li>
+                                <li><a class="dropdown-item" href="#">Polska</a></li>
+                                <li><a class="dropdown-item" href="#">Brasil</a></li>
+                            </div>
+                            <div class="col">
+                                <li><a class="dropdown-item" href="#">United States</a></li>
+                                <li><a class="dropdown-item" href="#">United Kingdom</a></li>
+                                <li><a class="dropdown-item" href="#">Australia</a></li>
+                                <li><a class="dropdown-item" href="#">France</a></li>
+                                <li><a class="dropdown-item" href="#">Deutshland</a></li>
+                                <li><a class="dropdown-item" href="#">Italia</a></li>
+                                <li><a class="dropdown-item" href="#">Polska</a></li>
+                                <li><a class="dropdown-item" href="#">Brasil</a></li>  
+                                        </div>
+                            <div class="col">
+                                <li><a class="dropdown-item" href="#">United States</a></li>
+                                <li><a class="dropdown-item" href="#">United Kingdom</a></li>
+                                <li><a class="dropdown-item" href="#">Australia</a></li>
+                                <li><a class="dropdown-item" href="#">France</a></li>
+                                <li><a class="dropdown-item" href="#">Deutshland</a></li>
+                                <li><a class="dropdown-item" href="#">Italia</a></li>
+                                <li><a class="dropdown-item" href="#">Polska</a></li>
+                                <li><a class="dropdown-item" href="#">Brasil</a></li>
+                            </div>
+                    </ul>
+                </div>
+            </section>
+        </section>
+        <section class="footer2">
+            <a href="#">Accesibilidad</a>
+            <a href="#">Ayuda</a>
+        </section>
+        <section class="footer2">
+            <a href="#">Informacion legal y privacidad</a>
+            <a href="#">Acuerdo de usuario</a>
+        </section>
+        <section class="footer2">
+            <a href="#">Política de privacidad y directiva de cookies (tus derechos de privacidad)</a>
+        </section>
+        <section class="footer2">
+            <a href="#">Actualizaciones del servicio online</a>
+            <a href="#">Seguridad</a>
+            <a href="#">Sus preferencias de cookies</a>
+            <img src="https://privacy-policy.truste.com/privacy-seal/seal?rid=073b349c-87a4-4995-908b-71d2e3a1339c">
+        </section>
+        <section style="margin-bottom: 50px;" class="footer2">
+            <a href="#">© 2024 Electronic Arts Inc.</a>
+        </section>
+    </footer>
+
+    <script src="Script.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
